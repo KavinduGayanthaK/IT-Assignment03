@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/styleSheet/normalize.css">
+    <style>
+        section {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .main {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            margin: auto;
+        }
+
+        #rectangle1 {
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        #rectangle2 {
+            top: 0;
+            right: 0;
+            background-color: green;
+        }
+
+        #rectangle3 {
+            bottom: 0;
+            left: 0;
+            background-color: orange;
+        }
+
+        #rectangle4 {
+            bottom: 0;
+            right: 0;
+            background-color: deeppink;
+        }
+
+        #centerSquare {
+            height: 40%;
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: white;
+        }
+
+        .circle {
+            height: 70%;
+            aspect-ratio: 1/1;
+            border-radius: 70%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .square {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            aspect-ratio: 1/1;
+            height: 30%;
+            background-color: red;
+        }
+
+        #centerCircle {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+
+        .corner {
+            aspect-ratio: 1/1;
+            height: 40%;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        #leftTopCorner {
+            top: -20%;
+            left: -10%;
+        }
+
+        #rightTopCorner {
+            top: -20%;
+            right: -10%;
+        }
+
+        #leftBottomCorner {
+            bottom: -20%;
+            left: -10%;
+        }
+
+        #rightBottomCorner {
+            bottom: -20%;
+            right: -10%;
+        }
+
+        #centerTop {
+
+            height: 30%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            top: -20%;
+            left:0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        #centerBottom {
+            height: 30%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            bottom: -20%;
+            left:0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="overflow: hidden">
+<section>
+    <div class="main" id="rectangle1">
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="main" id="rectangle2">
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="main" id="rectangle3">
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="main" id="rectangle4">
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div id="centerSquare">
+        <div id="centerCircle"></div>
+    </div>
+    <div class="corner" id="leftTopCorner"></div>
+    <div class="corner" id="rightTopCorner"></div>
+    <div class="corner" id="rightBottomCorner"></div>
+    <div class="corner" id="leftBottomCorner"></div>
+    <div id="centerTop"></div>
+    <div id="centerBottom"></div>
+</section>
+</body>
+
+</html>
